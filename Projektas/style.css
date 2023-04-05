@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    padding: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.right{
+    color: white;
+}
+
+.header-joystic {
+    height: 100px;
+    padding: 25px;
+}
+
+header h1 {
+    color: white;
+}
+
+header h1 span {
+    color: red;
+}
+
+/* header */
+/* nav */
+
+.navbar {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    top: 0; left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+.navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    display: none;
+}
+
+.navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul{
+    display: initial;
+}
+/* nav */
+
+/* section */
+.icons{
+    height: 50px;
+    
+    
+}
+.icons-background{
+    background-color: rgb(201, 200, 200);
+    padding: 5px;
+    margin: 15px;
+}
+
+.news-card{
+    padding: 30px;
+    max-width: 95%;
+}
+/* section */
+
+/* footer */
+footer {                            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+}
+.footer-navigation, 
+.icons-container, 
+.footer-paragraph{
+    padding: 20px;
+}
+.footer-anchor,
+.footer-paragraph {
+    color: white;  
+}
+/* footer */
+
+/* games cards */
+.games-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 30px;
+}
+.card img{
+    height: 350px;
+}
+
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.card p{
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* games cards */
